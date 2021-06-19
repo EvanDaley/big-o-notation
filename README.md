@@ -19,6 +19,8 @@ This is a simple operation that runs immediately, regardless of the length of th
 console.log("The first item is:", items[0])
 ```
 
+Use case: Doing something simple, one time. 
+
 ## Linear Time: O(n)
 Imagine you have an array of numbers and you want to double each item. To do that, you would just need to touch each number once. The length of time it takes the program to run is proportional to the length of the array. 15 items means your program does roughly 15 operations.
 
@@ -36,6 +38,9 @@ console.log(numbers)
 ```
 
 Since we hit each item once, the execution time correspond 1-to-1 with the length of the array. This is known as linear time!
+
+Use case: Any situation where you need to go through an array up to one time. 
+Examples: `.map`, `.filter`, `.reduce`, `.some`.
 
 ## Quadratic Time: O(n^2)
 Now imagine that for some reason, you have to loop through the list completely, one time for every item in the list. That might look something like this:
@@ -56,6 +61,8 @@ Since that list has 4 items, and we loop over the whole list 4 times, we end up 
 
 Generally, if you have a for-loop inside another for-loop and they both have length n, the answer is O(n^2).
 
+Use case: Bubble Sort, checking for duplicates, finding all possible pairs, 
+
 ## Logarithmic Time: O(log n)
 The last big one to pay attention to is O(log n). Its a little trickier to explain the math behind this one, but this one applies to most algorithms that divide and conquer. 
 
@@ -75,6 +82,8 @@ The act of dividing the data set in half each time guarantees that we find a res
 
 The only thing you really need to remember about this one is that it applies to divide and conquer algorithms. Anything like binary search that cuts the results in half each time. 
 
+Use case: Binary search, Divide and conquer, most recursive algorithms, 
+
 ## Final Notes
 Thats pretty much it. Being comfortable with those 3 should cover you in like 99% of interview questions.
 
@@ -87,3 +96,6 @@ The premise is that you loop over the whole array, and for each item, do some ki
 
 If you want to go deeper, this article does a pretty good job covering more scenarios.
 https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/
+
+This article also goes into great detail:
+https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/
