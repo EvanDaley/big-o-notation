@@ -40,6 +40,7 @@ console.log(numbers)
 Since we hit each item once, the execution time correspond 1-to-1 with the length of the array. This is known as linear time!
 
 Use case: Any situation where you need to go through an array up to one time. 
+
 Examples: `.map`, `.filter`, `.reduce`, `.some`.
 
 ## Quadratic Time: O(n^2)
