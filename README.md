@@ -1,8 +1,8 @@
 # big-o-notation
 
-This repo contains an overview of Big O Notation. This isn't comprehensive, but should help you get a basic idea of how it works, and how you can approach certain questions.
-
 ## Setting the stage
+This isn't comprehensive, but should help you get a basic idea of how it works, and how you can approach certain questions.
+
 Imagine you have an array with `n` elements, and you have some code that does something to that array. The length of time it takes the program to run might be proportional to the length of the array. If the array has 100 items, and you loop over the array 100 times, you are doing roughly 10,000 operations. Looking at Big O Notation gives you a way to classify that operation. Generally O(n) is considered okay, and O(n^2) is bad!
 
 If someone asks about time complexity, they want you to categorize the code in one of these groups:
