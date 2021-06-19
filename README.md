@@ -1,6 +1,6 @@
 # big-o-notation
 
-## Setting the stage
+## Overview
 Imagine you have an array with `n` elements, and you have some code that does something to that array. The length of time it takes the program to run might be proportional to the length of the array. If the array has 100 items, and you loop over the array 100 times, you are doing roughly 10,000 operations. Looking at Big O Notation gives you a way to classify that operation. Generally O(n) is considered okay, and O(n^2) is bad!
 
 This might seem scary at first but really isn't too bad once you get the hang of it.
